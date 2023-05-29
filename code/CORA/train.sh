@@ -1,0 +1,11 @@
+python3 train_dense_encoder.py \
+    --max_grad_norm 2.0 \
+    --encoder_model_type hf_bert \
+    --pretrained_model_cfg bert-base-multilingual-uncased \
+    --seed 12345 --sequence_length 256 \
+    --warmup_steps 300 --batch_size 8  --do_lower_case \
+    --train_file /mnt/minerva1/nlp/projects/multiopen_FC/ZPJa/data/mDPR/new_data.json \
+    --dev_file /mnt/minerva1/nlp/projects/multiopen_FC/ZPJa/data/mDPR/new_dev.json \
+    --output_dir /mnt/minerva1/nlp/projects/multiopen_FC/ZPJa/mDPR_models \
+    --learning_rate 2e-05 --num_train_epochs 40 \
+    --dev_batch_size 6 --val_av_rank_start_epoch 30
