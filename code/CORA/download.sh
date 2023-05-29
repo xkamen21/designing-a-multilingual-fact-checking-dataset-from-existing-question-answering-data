@@ -1,7 +1,8 @@
 # download models
-mkdir ../../data/
-mkdir ../../data/models/
-mkdir ../../data/outputs/
+mkdir ../../data
+mkdir ../../data/models
+mkdir ../../data/models/t5
+mkdir ../../data/outputs
 mkdir ../../data/outputs/converted
 mkdir ../../data/outputs/converted/train
 mkdir ../../data/outputs/converted/train/possitive
